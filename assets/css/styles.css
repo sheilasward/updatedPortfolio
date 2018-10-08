@@ -1,0 +1,147 @@
+html, body {
+    height: 100%;
+}
+
+#cover {
+    background-image: url(../images/northern-lights.jpg);
+    background-size: cover;
+    color: white;
+    height: 100%;
+    text-align: center;
+}
+
+#carousel, #skills, #about #portfolio{
+    height: auto;
+}
+
+#carousel-background {
+    color: black;
+    position: relative;
+}
+
+#skills-background {
+    position: relative;
+}
+
+#portfolio-background {
+    position: relative;
+}
+
+#about-background {
+    position: relative;
+}
+
+.c-img-overlay {
+    position: absolute;
+    top: 1%;
+    left: 2%;
+    z-index: 10;
+}
+
+.s-img-overlay {
+    position: absolute;
+    top: 1%;
+    left: 2%;
+    z-index: 10;
+}
+
+.p-img-overlay {
+    position: absolute;
+    top: 1%;
+    left: 2%;
+    z-index: 10;
+}
+
+.a-img-overlay {
+    position: absolute;
+    top: 1%;
+    left: 2%;
+    z-index: 10;
+}
+
+/*
+#ed-icon {
+    height: 200px;
+	padding: 10px;
+}
+*/
+
+.card {
+    width: 18rem;
+}
+
+
+#welcome {
+    padding-top: 50px;
+}
+
+#email-form {
+    visibility: hidden;
+    background-color: white;
+    opacity: 0.9;
+    color: black;
+    border: 2px solid green;
+    margin: 0px, 30px;
+}
+
+.section-content {
+    padding-top: 4rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+#contact-info {
+    font-size: 24px;
+}
+
+.container-lg {
+    margin-left: 6rem;
+    margin-right: 6rem;
+}
+
+#skills {
+    background-image: url(../images/pink_rice.png);
+    background-size: cover;
+    background-repeat: repeat;
+    height: auto;
+
+}
+
+#portfolio {
+    background-image: url(../images/fresh_snow.png);
+    background-size: cover;
+    background-repeat: repeat;
+    height: auto;
+}
+
+.card-img-top {
+    border: 2px solid black;
+}
+
+.card-body {
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+#prev-next-btn {
+    background-color:  #7176B5;
+}
+
+#skill-cards {
+    margin-top: 20px;
+}
+
+#about {
+    background-image: url("../images/light-grey-terrazzo.png");
+    background-size: cover;
+}
+
+.about-text {
+    background: rgba(0,0,0,0.8);
+    color: white;
+    margin: 3rem;
+    padding: 1rem;
+    width: 25rem;
+}
+
