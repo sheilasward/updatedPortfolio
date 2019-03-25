@@ -1,42 +1,9 @@
 html, body {
-    
- /*   font-family: "Nunito", sans-serif; */ 
     height: 100%;
 }
 
+
 #mainNavbar {
-    background-color: #4AAAA6;
-}
-
-#mainNavbar .navbar-brand {
-    color: white;
-    letter-spacing: 1.2px;
-    font-size: 22px;
-    font-weight: 500;
-}
-
-#mainNavbar .nav-link {
-    color: white;
-    letter-spacing: 1.2px;
-    font-weight: 500;
-}
-
-#mainNavbar a.nav-link:hover,
-#mainNavbar a.nav-link.active {
-    color: #245956;
-}
-
-.my-pic {
-    text-align: right;
-}
-
-
-
-
-
-
-/*
-.navbar {
     margin: 0;
     padding: 20px 60px;
     background-color: #4AAAA6;
@@ -44,17 +11,22 @@ html, body {
     height: 60px;
 }
 
-/*
+#mainNavbar .nav-link:hover {
+    color: #245956;
+}
 
+#mainNavbar .navbar-brand {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
 
-
-
-
-
-*/
+#mainNavbar .nav-active {
+    color: #245956;
+}
 
 .intro {
-    padding-top: 260px;
+    padding: 150px;
 }
 
 .splash {
@@ -63,11 +35,13 @@ html, body {
 }
 
 .spaced-1 {
-    
+    letter-spacing: 1.5px;
 }
 
 .spaced-2 {
-    
+    letter-spacing: 1.5px;
+    font-weight: bold;
+    color: white;
 }
 
 .lead {
@@ -76,63 +50,14 @@ html, body {
 
 .reg {
     padding-top: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 120px;
 }
 
 .contrast {
     background-color: #4AAAA6;
     color: white;
+    padding: 0 100px;
     text-align: center;
-}
-
-.jus {
-    text-align: justify;
-}
-
-.btm-border {
-    border-bottom: 1px solid white; 
-}
-
-.new-fontsz {
-    font-size: 24px;
-}
-
-.icons {
-    font-size: 24px;
-}
-
-.vspacer {
-    margin-bottom: 50px;
-}
-
-.jumbotron {
-    bottom: 0;
-    margin-top: 70px;
-    padding-top: 70px;
-    height: 250px;
-}
-
-.btn-contrast {
-    background-color: #4AAAA6;
-    color: white;
-    border: 2px solid white;
-    text-align: center;
-    width: 160px;
-}
-
-.btn-contrast:hover {
-    background-color: white;
-    color: #4AAAA6;
-}
-
-.btn-li {
-    background-color: #0077B5;
-    color: white;
-}
-
-.btn-gh {
-    background-color: black;
-    color: white;
 }
 
 .fa-html5,
@@ -145,7 +70,7 @@ html, body {
 
 .img-border {
     box-sizing: border-box;
-    border: 2px solid gray;
+    border: 2px solid black; 
     width: 330px;
 }
 
@@ -156,17 +81,10 @@ html, body {
 
 .card-img-top {
     box-sizing: border-box;
-    border: 2px solid gray;
+    border: 2px solid black;
     width: 250px;
-    margin: 0;
-    padding: 0;
 }
 
-.reference-item {
-
-    margin: 20px;
-    padding: 0;
-}
 
 
 .reference a {
@@ -236,24 +154,24 @@ html, body {
 
 
 
-h4 {
-    font-size: 20px;
-}
+
 
 
 h5 {
     text-align: center;
+    color: white;
 }
 
 .app-border {
     box-sizing: border-box;
     width: 250px;
+    background-color: #4AAAA6;
 }
 
 .card-body {
-    border-left: 2px solid gray;
-    border-right: 2px solid gray;
-    border-bottom: 2px solid gray;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
 }
 
 h6 {
@@ -306,7 +224,6 @@ h1 {
     width: 103px;
 }
 
-/*
 
 .active {
     background-color: #4AAAA6;
@@ -315,8 +232,6 @@ h1 {
     width: 103px;
     outline: none;
 }
-
-*/
 
 .app-link {
     color: #4AAAA6;

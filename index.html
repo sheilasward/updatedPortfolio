@@ -1,430 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Sheila Ward Portfolio - About</title>
+    <title>Sheila Ward Portfolio</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap and other CSS files -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   </head>
   <body>
-    <section id="cover">
+    <nav id="mainNavbar" class="navbar navbar-dark navbar-expand-lg fixed-top">
+      <a href="#" class="navbar-brand">SHEILA WARD - FULL-STACK DEVELOPER</a>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#collapsibleNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#cover">INTRO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">SKILLS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio">MY WORK</a>
+          </li>    
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">CONTACT</a>
+          </li>    
+        </ul>
+      </div>  
+    </nav>
 
 
-        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-            <h1 class="navbar-brand">Sheila S Ward</h1>
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                  <a href="#carousel"><button type="button" class="btn btn-secondary btn-sm" id="prev-next-btn">Next &darr;</button></a>
-              </li>
-            </ul>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="collapsibleNavbar">
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                  <a class="nav-link" href="#carousel">Slideshow</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#skills">Skills/Education</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#portfolio">Portfolio</a>
-                </li>    
-                <li class="nav-item">
-                    <a class="nav-link" href="#about">About</a>
-                </li>    
-              </ul>
-            </div>  
-          </nav>
-
-
-      <div id="cover-caption">
-        <div class="container container-fluid">
-          <br><br>
-          <h1 class="display-4">Welcome to my Portfolio</h1>
-          <div id="contact-info">
-            Sheila Stanaland Ward<br>
-            5703 Davis Mill Road<br>
-            Greensboro, NC  27406<br>
-            (336) 327-4914<br><br>
-          </div>
-        </div>
-        <div class="container">
-          <div class="col-sm-10 mx-auto">
-            <a href="https://github.com/sheilasward"><button type="button" class="btn btn-success btn-lg mb-2">My GitHub</button></a>&emsp;
-            <a href="https://www.linkedin.com/in/sheilastanalandward/"><button type="button" class="btn btn-success btn-lg mb-2">My LinkedIn</button></a>&emsp;
-            <button type="button" class="btn btn-success btn-lg mb-2" onClick="openEmail()">Email Me</button>&emsp;
-            <br>
-          </div>
-        </div>
-        <div class="container">
-          <div class="form-popup" id="email-form">
-            <form action="/action_page.php" class="form-container">
-              <h1>Send me an email:</h1><br>
-              <input type="text" name="ret-email" autofocus placeholder="Enter your email here" required><br><br><br>
-              <textarea rows="4" cols="100" name="message" placeholder="Enter your message here" required></textarea><br><br>
-              <button type="submit" class="btn">Send</button>&emsp;
-              <button type="button" class="btn cancel" onclick="closeEmail()">Close</button><br><br>
-            </form>
-          </div>
-        </div>
+      <section id="cover" class="container-fluid my-0"> 
+       
+      <h1 class="intro display-4">Welcome to my Portfolio</h1>
+      <div class="splash">
+        <p>I love coding! &nbsp; I write clean and efficient code to create robust full stack web applications.</p>
+        <p>I enjoy using logic to solve problems on the back end, and creativity to design User Interfaces on the front end!</p>
       </div>
-    </section>
+    </section>  
 
-    <section id="carousel">
-      <div id="carousel-background">
-        <div class="c-img-overlay">
-          <a href="#cover"><button type="button" class="btn btn-secondary btn-sm" id="prev-next-btn">Prev &uarr;</button></a>&emsp;
-          <a href="#skills-background"><button type="button" class="btn btn-secondary btn-sm" id="prev-next-btn">Next &darr;</button></a>
-        </div>
-      <div id="carousel-home" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carousel-home" data-slide-to="0" class="active"></li>
-          <li data-target="#carousel-home" data-slide-to="1"></li>
-          <li data-target="#carousel-home" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img class="d-block w-100" src="./assets/images/Hangman.png" alt="Hangman app">
-            <div class="carousel-caption d-none d-md-block">
-                <h3>Hangman</h3>
-                <p>Guess artists of top songs (1970-2010).</p>
+    <section id="about" class="my-0">  
+      <h1 data-animate="fadeInDown" class="display-4">About Me</h1>
+      <div class="container-fluid" id="about-background">
+        <div class="row reg">
+          <div class="col-xl-1 col-lg-1"></div>
+          <div class="col-xl-3 col-lg-4 col-md-12 px-4 text-center">
+            <div>
+              <img src="assets/images/atReunion2.jpg"><br/><br/>
+              <h4 class="pb-4">Sheila Ward - Nov 2017</h4>
             </div>
           </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="./assets/images/Eat-Da-Burger.png" alt="Eat-Da-Burger app">
-            <div class="carousel-caption d-none d-md-block">
-              <h3>Eat-Da-Burger</h3>
-              <p>Illustration of handlebars moving items around.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="./assets/images/Giphy.png" alt="Giphy app">
-            <div class="carousel-caption d-none d-md-block">
-              <h3>Giphy</h3>
-              <p>Illustration of API call to Giphy.com.</p>
-            </div>
-          </div>
-        </div>
-        <a class="carousel-control-prev" href="#carousel-home" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carousel-home" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
-      </div>
-    </section>
-
-    <section id="skills" class="img-fluid"><br>
-      <div id="skills-background">
-        <div class="s-img-overlay">
-          <a href="#carousel"><button type="button" class="btn btn-secondary btn-sm" id="prev-next-btn">Prev &uarr;</button></a>&emsp;
-          <a href="#portfolio"><button type="button" class="btn btn-secondary btn-sm" id="prev-next-btn">Next &darr;</button></a>
-        </div>
-        <div class="section-content">
-          <h1 class="display-4">Skills</h1>
-          <p class="lead">I have a variety of skills, from HTML5/CSS3/JavaScript to Java/PHP/SQL.  I also have mainframe 
-             skills such as JCL, CICS, COBOL, Easytrieve Plus, and SAS.  I enjoy using logic to solve problems on the back end, 
-             and creativity to design User Interfaces on the front end! </p>
-          <div class="card-deck">
-
-          <!-- First Card -->  
-            <div class="card mb-4">
-              <img class="card-img-top img-fluid" src="./assets/images/planning.jpg" width="200px" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">Strategy &amp; Planning</h5>
-                <p class="card-text">I have had years of experience scoping out projects for IT Management.  Although working mainly with a Waterfall
-                  method, I have had some opportunity to experience an Agile Environment, mainly in my Bootcamp education. 
-                </p>
-              </div>
-            </div>
-
-          <!-- Second Card -->
-            <div class="card mb-4">
-              <img class="card-img-top img-fluid" src="./assets/images/designing.jpg" width="200px" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">Creative &amp; Design</h5>
-                <p class="card-text">I took a Photoshop class in my Web Development education, and have used it quite a bit
-                  to modify photos and to design logos.  I enjoy the creative aspects of design.
-                </p>
-              </div>
-            </div>
- 
-          <!-- Third Card -->
-            <div class="w-100 d-none d-sm-block d-md-none"><!-- wrap every 2 on sm --></div>
-            <div class="card mb-4">
-              <img class="card-img-top" src="./assets/images/coding.png" width="200px" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">Programming &amp; Technical</h5>
-                <p class="card-text">I worked for Lincoln Financial Group (formerly Jefferson-Pilot) for 20 years, 
-                  and have had experience with many types of mainframe programming languages, such as COBOL, Easytrieve Plus, 
-                  JCL, DB2, CICS, and SAS.  For 10 years I was on the Life-Comm Admin team and became highly skilled at 
-                  Life-Comm.  I also worked for several years with Crystal Reports.
-                </p>
-              </div>
-            </div>
-
-          <!-- Fourth Card -->
-            <div class="w-100 d-none d-md-block d-lg-none"><!-- wrap every 3 on md --></div>
-            <div class="card mb-4">
-              <img class="card-img-top img-fluid" src="./assets/images/frontEnd.jpg" width="200px" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">Web - Front End</h5>
-                <p class="card-text">I taught myself HTML, CSS, and Javascript a while back, but have been refreshed and 
-                  updated by both my Web Development and Bootcamp programs to HTML5 and CSS3.  During my Bootcamp education, 
-                  I have learned ES6, Bootstrap, and JQuery.
-                </p>
-              </div>
-            </div>
-
-          <!-- Fifth Card -->
-            <div class="w-100 d-none d-sm-block d-md-none"><!-- wrap every 2 on sm --></div>
-            <div class="w-100 d-none d-lg-block d-xl-none"><!-- wrap every 4 on lg --></div>  
-            <div class="card mb-4">
-              <img class="card-img-top img-fluid" src="./assets/images/backEnd.jpg" width="200px" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">Web - Back End</h5>
-                <p class="card-text">During my time at Lincoln, I worked a little with PHP and Java, but during my Web 
-                  Development program, I delved into those two languages more - mainly Java.  During Bootcamp, we 
-                  concentrated on Node.JS, Express, Handlebars, MySQL, MongoDB, and Mongoose.
-                </p>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-        <div class="section-content"> 
-          <h1 class="display-4">Education</h1>
-          <p class="lead">My first formal post-secondary education was at UNC-G in the 1980's.  They did not have a formal
-             Computer Science degree, but from the first computer course I took, I was hooked.  I love Mathematics, and decided
-             to major in Math and take as many computer classes as I could get into my schedule.  While working at Jefferson-Pilot
-             I started teaching myself Web Development - mainly HTML and Javascript.  Then I began formal studies into the newer
-             technologies, with learning about HTTP and how packets are sent over the internet, and learning Object-Oriented 
-             programming languages.  It was very slow-going, with working full-time, and even after the Lincoln layoffs, I felt 
-             I was learning too slowly, so I began the UNC-CH Coding Bootcamp in May 2018.
-          </p>
-          <div class="container">  
-            <div class="col-md-12 mx-auto">  
-              <div class="card-deck">
-
-              <!-- First Card -->
-                <div class="card mb-4">
-                  <img class="card-img-top" src="./assets/images/UNCG_Logo.png" height="200px" alt="Card image cap">
-                  <div class="card-body">
-                    <h5 class="card-title">UNC-Greensboro</h5>
-                    <p class="card-text">I have had years of experience scoping out projects for IT Management.  Although working mainly with a Waterfall
-                       method, I have had some opportunity to experience an Agile Environment, mainly in my Bootcamp education. 
-                    </p>
-                  </div>
-                </div>
-
-              <!-- Second Card -->
-              <div class="w-100 d-none d-sm-block d-md-none"><!-- wrap every 2 on sm --></div>
-                <div class="card mb-4">
-                  <img class="card-img-top" src="./assets/images/5739f7a79c03f.image.jpg" height="200px" alt="Card image cap">
-                  <div class="card-body">
-                    <h5 class="card-title">Guilford Technical Community College</h5>
-                    <p class="card-text">During my time at Lincoln, I worked a little with PHP and Java, but during my Web 
-                      Development program, I delved into those two languages more - mainly Java.  During Bootcamp, we 
-                      concentrated on Node.JS, Express, Handlebars, MySQL, MongoDB, and Mongoose.
-                    </p>
-                  </div>
-                </div>
-
-              <!-- Third Card -->
-
-                <div class="w-100 d-none d-sm-block d-md-none"><!-- wrap every 2 on sm --></div>
-                <div class="w-100 d-none d-md-block d-lg-none"><!-- wrap every 2 on md --></div>
-                <div class="card mb-4">
-                  <img class="card-img-top" src="./assets/images/unc_swu.png" height="200px" alt="Card image cap">
-                  <div class="card-body">
-                    <h5 class="card-title">UNC-Chapel Hill Coding Bootcamp</h5>
-                    <p class="card-text">We concentrated on Node.JS, Express, Handlebars, MySQL, MongoDB, and Mongoose.
-                    </p>
-                  </div>
-                </div>
-              
-              </div>
-            </div>
-          </div>
-
-        </div>  
-      </div>
-      <br><br>
-    </section>
-
-    <section id="portfolio" class="img-fluid">
-      <div id="portfolio-background">
-        <div class="p-img-overlay">
-          <a href="#skills"><button type="button" class="btn btn-secondary btn-sm" id="prev-next-btn">Prev &uarr;</button></a>&emsp;
-          <a href="#about"><button type="button" class="btn btn-secondary btn-sm" id="prev-next-btn">Next &darr;</button></a>
-        </div>
-        <div class="section-content">
-          <h1 class="display-4">Portfolio</h1>
-
-        <div class="card-deck">
-
-        <!-- First Card -->  
-          <div class="card mb-4">
-            <img class="card-img-top img-fluid" src="./assets/images/technics-q-c-640-480-1b.jpg" width="200px" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Hangman</h5>
-              <p class="card-text">The purpose of this game is to guess the artist or band who performed 
-                a #1 song during the 1970 - 2010 time period.
-              </p>
-              <p><a href="https://sheilasward.github.io/Word-Guess-Game/">Play Hangman</a></p>
-              <p><a href="https://github.com/sheilasward/Word-Guess-Game">View Github</a></p>
-
-            </div>
-          </div>
-  
-        <!-- Second Card -->
-          <div class="card mb-4">
-            <img class="card-img-top img-fluid" src="./assets/images/technics-q-c-640-480-2d.png" width="200px" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Crystals Collector</h5>
-              <p class="card-text">This game gives you a target point to get to in order to win the game.  You have
-                4 crystals, and each one has a number connected to it.  Your job is to click on the right combination
-                of crystals to reach your target point.</p>
-              <p><a href="https://sheilasward.github.io/unit-4-game/">Play Crystals Collector</a></p>
-              <p><a href="https://github.com/sheilasward/unit-4-game">View Github</a></p>
-
-            </div>
-          </div>
-   
-        <!-- Third Card -->
-          <div class="w-100 d-none d-sm-block d-md-none"><!-- wrap every 2 on sm--></div>
-          <div class="card mb-4">
-            <img class="card-img-top" src="./assets/images/technics-q-c-640-480-5b.jpg" width="200px" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Bible Trivia Game</h5>
-              <p class="card-text">This game is targeted to 7 to 12-year-olds, and is a timed test to answer
-                questions from the Old and New Testaments.
-              </p>
-              <p><a href="https://sheilasward.github.io/TriviaGame/">Play Bible Trivia</a></p>
-              <p><a href="https://github.com/sheilasward/TriviaGame">View Github</a></p>
-            </div>
-          </div>
-  
-        <!-- Fourth Card -->
-          <div class="w-100 d-none d-md-block d-lg-none"><!-- wrap every 3 on md--></div>
-          <div class="card mb-4">
-            <img class="card-img-top img-fluid" src="./assets/images/pexels-photo-94654-640x480-1.png" width="200px" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">GiphyAPI</h5>
-              <p class="card-text">This application allows the user to enter a cartoon character to create a 
-                button.  When the button is clicked, a request is sent to GiphyAPI to return .gif files of the
-                character.  When a .gif is clicked, the .gif begins to play, and when clicked again, it stops.
-              </p>
-              <p><a href="https://sheilasward.github.io/GiphyAPI/">Play GiphyAPI </a></p>
-              <p><a href="https://github.com/sheilasward/GiphyAPI">View Github</a></p>
-            </div>
-          </div>
-
-        <!-- Fifth Card -->
-          <div class="w-100 d-none d-sm-block d-md-none"><!-- wrap every 2 on sm--></div>
-          <div class="w-100 d-none d-lg-block d-xl-none"><!-- wrap every 4 on lg--></div>
-          <div class="card mb-4">
-            <img class="card-img-top img-fluid" src="./assets/images/technics-q-c-640-480-7b.jpg" width="200px" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Train Time</h5>
-              <p class="card-text">This application keeps track of arrival and departure times of trains.  It uses
-                AJAX to keep up with the times, and changes them without refreshing the page.
-              </p>
-              <p><a href="https://sheilasward.github.io/TrainTime/">View Train Time </a></p>
-              <p><a href="https://github.com/sheilasward/TrainTime">View Github</a></p>
-            </div>
-          </div>
-
-        <!-- Sixth Card -->
-          <div class="w-100 d-none d-xl-block"><!-- wrap every 5 on xl--></div>
-          <div class="card mb-4">
-            <img class="card-img-top img-fluid" src="./assets/images/Team1.jpg" width="200px" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Raleigh Vibes</h5>
-              <p class="card-text">This application shows the user a list of events coming to the Raleigh area in
-                the near future, and allows the user to view a YouTube video of the performers and also go to Ticketmaster.  
-                This was a team project.
-              </p>
-              <p><a href="https://sheilasward.github.io/Project1/">View Raleigh Vibes </a></p>
-              <p><a href="https://github.com/DjangoJuice/Project1">View Github</a></p>
-            </div>
-          </div>  
-
-        <!-- Seventh Card -->
-          <div class="w-100 d-none d-sm-block d-md-none"><!-- wrap every 2 on sm--></div>
-          <div class="w-100 d-none d-md-block d-lg-none"><!-- wrap every 3 on md--></div>
-          <div class="card mb-4">
-            <img class="card-img-top img-fluid" src="./assets/images/FriendFinderImg2-640-480-finished.jpg" width="200px" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Friend Finder</h5>
-              <p class="card-text">This application asks a series of questions to the user, then pairs them to the
-                "friend" in the database which most closely matches the same answers. 
-              </p>
-              <p><a href="https://morning-anchorage-28681.herokuapp.com/">View Friend Finder </a></p>
-              <p><a href="https://github.com/sheilasward/FriendFinder">View Github</a></p>
-            </div>
-          </div>    
-
-        <!-- Eighth Card -->
-          <div class="w-100 d-none d-md-block d-lg-none"><!-- wrap every 3 on md --></div>
-          <div class="card mb-4">
-            <img class="card-img-top img-fluid" src="./assets/images/burgerOnComputer2a-640-480.jpg" width="200px" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Eat-Da-Burger</h5>
-              <p class="card-text">This is a cute little app that uses Handlebars to move "burgers" around the screen.
-                The user enters the name of a burger, and it appears on the left with a button that can be pressed to
-                "eat" it.  When the "eat" button is pressed, it moves to the right, where it can be deleted.  No going 
-                back to the left - you're not allowed to "throw up"!
-              </p>
-              <p><a href="https://shielded-river-30768.herokuapp.com/">Play Eat-Da-Burger</a></p>
-              <p><a href="https://github.com/sheilasward/burger">View Github</a></p>
-            </div>
-          </div>      
-
-        <!-- Ninth Card -->
-          <div class="w-100 d-none d-sm-block d-md-none"><!-- wrap every 2 on sm--></div>
-          <div class="w-100 d-none d-lg-block d-xl-none"><!-- wrap every 4 on lg--></div>
-          <div class="card mb-4">
-            <img class="card-img-top img-fluid" src="./assets/images/Project2-640x480.png" width="200px" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Bootcamp University</h5>
-              <p class="card-text">This app is a computer system for a University, with professors, students, courses,
-                and classes.  It is not complete at this time, but will allow a user to log on, add a course, and a 
-                student can enroll in classes.  This was a team project.
-              </p>
-              <p><a href="https://bootcamp-university.herokuapp.com/">View Bootcamp University</a></p>
-              <p><a href="https://github.com/sheilasward/Project2-Group5">View Github</a></p>
-            </div>
-          </div>      
-        </div>
-      </div>        
-    </section>
-
-    <section id="about" class="img-fluid"><br>
-      <div id="about-background">
-        <div class="a-img-overlay">
-          <a href="#portfolio"><button type="button" class="btn btn-secondary btn-sm" id="prev-next-btn">Prev &uarr;</button></a>&emsp;
-          <a href="#cover"><button type="button" class="btn btn-secondary btn-sm" id="prev-next-btn">Top &uarr;</button></a>
-        </div>
-        <div class="section-content">
-        <div class="container">
-        <div class="row">
-            <div class="col-lg-12 col-sm-12 chgHeader"><br><br><br><h2>ABOUT ME</h2><hr></div>
-        <div class="row">
-          <div class="col-lg-3 col-md-4 chgHeader">
-            <img src="assets/images/atReunion2.jpg">
-            <h5>Sheila Ward - Nov 2017</h5>
-          </div>
-          <div class="col-lg-9 col-md-8">
+          <div class="col-xl-7 col-lg-6 col-md-12 px-4">
             <p>I have been an Application Developer for over 20 years in the insurance industry, and I love coding!</p>
             <p>I have worked with a variety of languages and platforms during my employment at Lincoln Financial, 
               until my job was eliminated because of outsourcing. Most of my work at Lincoln included Mainframe 
@@ -437,42 +72,382 @@
               and Full Stack Web Development at UNC Chapel Hill's Coding Bootcamp.</p>
             <p>In my spare time, I enjoy visiting with family and serving on the Production Team at my church.</p>
           </div>
-          <div class="row">
-            <div class="col-lg-10 col-md-4 col-sm-3"></div>
-              <h5>Follow me on the web</h5>
-              <a href="" class="btn btn-sm btn-secondary-outline">twitter</a>
-              <a href="" class="btn btn-sm btn-secondary-outline">facebook</a>
-              <a href="" class="btn btn-sm btn-secondary-outline">youtube</a>
+          <div class="col-xl-1 col-lg-1"></div>
+        </div>
+        <div class="row contrast">
+          <div class="col-sm-12 mb-4">
+            <h1 class="display-4">What I Do</h1>
+          </div>
+        </div>
+        <div class="row contrast">
+          <div class="col-lg-2"></div>
+          <div class="col-lg-3">
+            <i class="mb-3 fab fa-html5"></i>
+            <h3 class="mb-3">Websites</h3>
+            <p class="jus">I bring the latest front end technologies to the table when creating 
+              beautiful, mobile-responsive websites. Front end design with HTML5, CSS3, Bootstrap 4,
+              vanilla JS, jQuery, React, and Handlebars if needed.</p>
+          </div>
+          <div class="col-lg-3">
+            <i class="mb-3 fas fa-layer-group"></i>
+            <h3 class="mb-3">Web Applications</h3>
+            <p class="jus">I build full stack web applications using all the latest tools. I have experience with MySQL and Sequelize, MongoDB and Mongoose, Node, Express, PHP, and React.</p>
+          </div>
+          <div class="col-lg-3">
+            <i class="mb-3 fab fa-android"></i>
+            <h3 class="mb-3">Android Apps</h3>
+            <p class="jus">I have created Android apps with both MIT's App Inventor, and Android Studio, using JAVA.</p>
+          </div>
+          <div class="col-lg-3"></div>
+        </div>
+        <div class="row contrast">
+          <div class="col-lg-3"></div>
+          <div class="btm-border col-lg-6 mb-3"></div>
+          <div class="col-lg-3"></div>
+        </div>
+        <div class="row contrast">
+          <div class="col-lg-3"></div>
+          <div class="col-lg-6">
+            <p class="new-fontsz">Get in touch if you need work done or want to collaborate!</p>
+          </div>
+          <div class="col-lg-3"></div>
+        </div>
+        <div class="row contrast">
+          <div class="col-lg-3"></div>
+          <div class="col-lg-6 mb-4">
+            <a href="#contact" class="btn btn-contrast" role="button"><i class="far fa-envelope mr-2"></i>CONTACT ME</a>
+            <a href="./assets/images/my-resume-2 (4).pdf" target="_blank" class="btn btn-contrast" role="button"><i class="far fa-file-alt mr-2"></i>MY RESUME</a>
+          </div>
+          <div class="col-lg-3"></div>    
+        </div>
+
+
+
+      </div>
+      
+    </section>  
+
+    <section id="skills" class="container-fluid my-0">    
+
+        <h1 class="display-4">Skills &amp; Education</h1>
+        <div class="container-fluid mt-2">
+          <div class="container-fluid mt-4">
+            <div class="row justify-content-center">
+
+                <div class="col-auto mb-3">
+                  <div class="card" style="width: 330px; height: 468px;">
+                    <img class="img-border" src="./assets/images/planning.jpg" alt="Card image cap">
+                    <div class="card-body card-border">
+                      <h5 class="card-title">Strategy &amp; Planning</h5>
+                      <p class="card-text">I have had years of experience scoping out projects for IT Management.  Although working mainly with a Waterfall
+                        method, I have had some opportunity to experience an Agile Environment, mainly in my Bootcamp education. 
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+ 
+                <div class="col-auto mb-3">
+                  <div class="card" style="width: 330px; height: 468px;">
+                    <img class="img-border" src="./assets/images/designing.jpg" alt="Card image cap">
+                    <div class="card-body card-border">
+                      <h5 class="card-title">Creative &amp; Design</h5>
+                      <p class="card-text">I took a Photoshop class in my Web Development education, and have used it quite a bit
+                        to modify photos and to design logos.  I enjoy the creative aspects of design.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+ 
+                <div class="col-auto mb-3">
+                  <div class="card" style="width: 330px; height: 468px;">
+                    <img class="img-border" src="./assets/images/coding.png" alt="Card image cap">
+                    <div class="card-body card-border">
+                      <h5 class="card-title">Programming &amp; Technical</h5>
+                      <p class="card-text">I worked for Lincoln Financial Group for 20 years, 
+                        and know many mainframe programming languages, such as COBOL, Easytrieve Plus, 
+                        JCL, DB2, CICS, and SAS.  I also worked for several years with Crystal Reports.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="col-auto mb-3">
+                  <div class="card" style="width: 330px; height: 468px;">
+                    <img class="img-border" src="./assets/images/frontEnd.jpg" alt="Card image cap">
+                    <div class="card-body card-border">
+                      <h5 class="card-title">Web - Front End</h5>
+                      <p class="card-text">I taught myself HTML, CSS, and Javascript a while back, but have been refreshed and 
+                        updated by both my Web Development and Bootcamp programs to HTML5 and CSS3.  During my Bootcamp education, 
+                        I have learned ES6, Bootstrap, JQuery, and React.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+ 
+                <div class="col-auto mb-3">
+                  <div class="card" style="width: 330px; height: 468px;">
+                    <img class="img-border" src="./assets/images/backEnd.jpg" alt="Card image cap">
+                    <div class="card-body card-border">
+                      <h5 class="card-title">Web - Back End</h5>
+                      <p class="card-text">During my time at Lincoln, I worked a little with PHP and Java, but during my Web 
+                        Development program, I delved into those two languages more - mainly Java.  During Bootcamp, we 
+                        concentrated on Node.JS, Express, Handlebars, MySQL, MongoDB, and Mongoose.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              
+ 
             </div>
           </div>
-        </div>		
+
+          <div class="container-fluid mt-4">
+            <div class="row justify-content-center">
+
+                <div class="col-auto mb-3">
+                  <div class="card" style="width: 330px; height: 270px;">
+                    <img class="img-border" src="./assets/images/UNCG_Logo.png" alt="Card image cap">
+                    <div class="card-body card-border">
+                      <h6>B.S. Mathematics</h6>
+                      <h6>GPA 3.78</h6>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="col-auto mb-3">
+                  <div class="card" style="width: 330px; height: 270px;">
+                    <img class="img-border" src="./assets/images/5739f7a79c03f.image.jpg" alt="Card image cap">
+                    <div class="card-body card-border">
+                      <h6>Web Development</h6>
+                      <h6>GPA 3.93</h6>
+                    </div>
+                  </div>
+                </div>  
+
+
+              <div class="col-auto mb-3">
+                  <div class="card" style="width: 330px; height: 270px;">
+                    <img class="img-border" src="./assets/images/unc_swu.png" alt="Card image cap">
+                    <div class="card-body card-border">
+                      <h6>Full-Stack Web Development</h6>
+                      <h6>GPA A+</h6>
+                    </div>
+                  </div>
+                </div>  
+              </div>
+
+
+            </div>
+          </div>
+
+        </div>  
+
+      <br><br>
+    </section> 
+
+    <section id="portfolio" class="container-fluid my-0">  
+      <h1 class="display-4">My Work</h1>
+      <div class="button-group" id="filter">
+          
+        <button data-filter="all" class="btn btn-work active">All</button>
+        <button data-filter="uiux" class="btn btn-work">UI / UX</button>
+        <button data-filter="nodejs" class="btn btn-work">NodeJS</button>
+        <button data-filter="database" class="btn btn-work">Database</button>
+        <button data-filter="handlebars" class="btn btn-work">Handlebars</button>
+        <button data-filter="react" class="btn btn-work">React</button>
       </div>
-    </section>
 
-    <section id="footer">
-      <div class="jumbotron">
-        <p>Copyright ©2018 by Sheila S Ward</p>
+      <div class="container-fluid mt-4">
+        <div class="row justify-content-center">
+
+            <div data-category="uiux" class="col-auto reference-item card mb-4" style="width: 250px; height:380px;">
+              <img class="card-img-top" src="./assets/images/WhosTheArtist.jpg" width="250px" alt="Card image cap">
+              <div class="card-body app-border">
+                <h5 class="card-title">Hangman</h5>
+                <p class="card-text">Guess the artist/band who had a #1 hit song during the 1970 - 2010 time period.</p>
+                <h6><a class="app-link" href="https://sheilasward.github.io/Word-Guess-Game/" target="_blank">Play Hangman</a></h6>
+                <h6><a class="app-link" href="https://github.com/sheilasward/Word-Guess-Game" target="_blank">View Github</a></h6>
+              </div>
+            </div>
+
+            <div data-category="uiux" class="col-auto reference-item card mb-4" style="width: 250px; height:380px;">
+              <img class="card-img-top" src="./assets/images/CrystalsCollector.jpg" width="250px" alt="Card image cap">
+              <div class="card-body app-border">
+                <h5 class="card-title">Crystals Collector</h5>
+                <p class="card-text">Collect the crystals to add up to the given random number.</p>
+                <h6><a class="app-link" href="https://sheilasward.github.io/unit-4-game/" target="_blank">Play Crystals Collector</a></h6>
+                <h6><a class="app-link" href="https://github.com/sheilasward/unit-4-game" target="_blank">View Github</a></h6>
+              </div>
+            </div>
+ 
+            <div data-category="uiux" class="reference-item card mb-4" style="width: 250px; height:380px;">
+              <img class="card-img-top" src="./assets/images/BibleTrivia.jpg" width="250px" alt="Card image cap">
+              <div class="card-body app-border">
+                <h5 class="card-title">Bible Trivia Game</h5>
+                <p class="card-text">Children's timed test to answer questions from the Old and New Testaments.</p>
+                <h6><a class="app-link" href="https://sheilasward.github.io/TriviaGame/" target="_blank">Play Bible Trivia</a></h6>
+                <h6><a class="app-link" href="https://github.com/sheilasward/TriviaGame" target="_blank">View Github</a></h6>
+              </div>
+            </div>
+
+            <div data-category="uiux" class="reference-item card mb-4" style="width: 250px; height:380px;">
+              <img class="card-img-top" src="./assets/images/sbAndPat.jpg" width="250px" alt="Card image cap">
+              <div class="card-body app-border">
+                <h5 class="card-title">Giphy API</h5>
+                <p class="card-text">Get cartoon character gifs from Giphy API.  Click to toggle animation. </p>
+                <h6><a class="app-link" href="https://sheilasward.github.io/GiphyAPI/" target="_blank">Play GiphyAPI </a></h6>
+                <h6><a class="app-link" href="https://github.com/sheilasward/GiphyAPI" target="_blank">View Github</a></h6>
+              </div>
+            </div>
+
+            <div  data-category="uiux database" class="reference-item card mb-4" style="width: 250px; height:380px;">
+              <img class="card-img-top" src="./assets/images/train.jpg" width="250px" alt="Card image cap">
+              <div class="card-body app-border">
+                <h5 class="card-title">Train Time</h5>
+                <p class="card-text">Keep track of arrival/ departure times of trains using AJAX.</p>
+                <h6><a class="app-link" href="https://sheilasward.github.io/TrainTime/" target="_blank">View Train Time </a></h6>
+                <h6><a class="app-link" href="https://github.com/sheilasward/TrainTime" target="_blank">View Github</a></h6>
+              </div>
+            </div>
+
+            <div data-category="uiux" class="reference-item card mb-4" style="width: 250px; height:380px;">
+              <img class="card-img-top" src="./assets/images/RaleighVibes2.jpg" width="250px" alt="Card image cap">
+              <div class="card-body app-border">
+                <h5 class="card-title">Raleigh Vibes</h5>
+                <p class="card-text">Find events coming to the Raleigh area soon, and buy tickets.  Team Project #1.</p>
+                <h6><a class="app-link" href="https://djangojuice.github.io/Project1/" target="_blank">View Raleigh Vibes </a></h6>
+                <h6><a class="app-link" href="https://github.com/DjangoJuice/Project1" target="_blank">View Github</a></h6>
+              </div>
+            </div>
+
+            <div data-category="database" class="reference-item card mb-4" style="width: 250px; height:380px;">
+              <img class="card-img-top" src="./assets/images/FriendFinder.jpg" width="250px" alt="Card image cap">
+              <div class="card-body app-border">
+                <h5 class="card-title">Friend Finder</h5>
+                <p class="card-text">Answer some questions, then find your most compatible "friend".</p>
+                <h6><a class="app-link" href="https://morning-anchorage-28681.herokuapp.com/" target="_blank">View Friend Finder </a></h6>
+                <h6><a class="app-link" href="https://github.com/sheilasward/FriendFinder" target="_blank">View Github</a></h6>
+              </div>
+            </div>
+ 
+            <div data-category="uiux database nodejs handlebars" class="reference-item card mb-4" style="width: 250px; height:380px;">
+              <img class="card-img-top" src="./assets/images/EatDaBurger.jpg" width="250px" alt="Card image cap">
+              <div class="card-body app-border">
+                <h5 class="card-title">Eat-Da-Burger</h5>
+                <p class="card-text">Design and eat your own virtual burger - no throwing up allowed!</p>
+                <h6><a class="app-link" href="https://shielded-river-30768.herokuapp.com/" target="_blank">Play Eat-Da-Burger</a></h6>
+                <h6><a class="app-link" href="https://github.com/sheilasward/burger" target="_blank">View Github</a></h6>
+              </div>
+            </div>
+ 
+            <div data-category="uiux database nodejs" class="reference-item card mb-4" style="width: 250px; height:380px;">
+              <img class="card-img-top" src="./assets/images/BootcampU2.png" width="250px" alt="Card image cap">
+              <div class="card-body app-border">
+                <h5 class="card-title">Bootcamp University</h5>
+                <p class="card-text">Computer system for a virtual University.  Team project #2.</p>
+                <h6><a class="app-link" href="https://bootcamp-university.herokuapp.com/" target="_blank">View Bootcamp U</a></h6>
+                <h6><a class="app-link" href="https://github.com/sheilasward/Project2-Group5" target="_blank">View Github</a></h6>
+              </div>
+            </div>
+ 
+            <div data-category="react" class="reference-item card mb-4" style="width: 250px; height:380px;">
+              <img class="card-img-top" src="./assets/images/ClickyGame.jpg" width="250px" alt="Card image cap">
+              <div class="card-body app-border">
+                <h5 class="card-title">Clicky Game</h5>
+                <p class="card-text">Children's memory game - click on each princess only once!</p>
+                <h6><a class="app-link" href="https://stormy-hamlet-63684.herokuapp.com/" target="_blank">Play Clicky Game</a></h6>
+                <h6><a class="app-link" href="https://github.com/sheilasward/Clicky-Game" target="_blank">View Github</a></h6>
+              </div>
+            </div>
+d 
+            <div data-category="uiux database handlebars nodejs" class="reference-item card mb-4" style="width: 250px; height:380px;">
+              <img class="card-img-top" src="./assets/images/MongoScraper2.jpg" width="250px" alt="Card image cap">
+              <div class="card-body app-border">
+                <h5 class="card-title">Mongo Scraper</h5>
+                <p class="card-text">Scrape news articles from K-Love.  Save favorites and keep notes</p>
+                <h6><a class="app-link" href="https://limitless-eyrie-85004.herokuapp.com/" target="_blank">View Mongo Scraper</a></h6>
+                <h6><a class="app-link" href="https://github.com/sheilasward/MongoScraper" target="_blank">View Github</a></h6>
+              </div>
+            </div>
+ 
+            <div data-category="uiux database nodejs" class="reference-item card mb-4" style="width: 250px; height:380px;">
+              <img class="card-img-top" src="./assets/images/YumBot2.jpg" width="250px" alt="Card image cap">
+              <div class="card-body app-border">
+                <h5 class="card-title">YumBot</h5>
+                <p class="card-text">Full Recipe Application. Save your own or YumBot's recipes. Team Project #3.</p>
+                <h6><a class="app-link" href="https://immense-mesa-61835.herokuapp.com/" target="_blank">View YumBot</a></h6>
+                <h6><a class="app-link" href="https://github.com/jenguin777/Project3" target="_blank">View Github</a></h6>
+              </div>
+            </div>
+        </div>
+      </div>   
+    </section>  
+
+    <section id="contact"> 
+      <div class="container vspacer">
+        <h1 class="display-4 vspacer">Contact Me</h1>
+        <div class="col-lg-8 mx-auto">
+          <form id="contact-form" method="POST" action="https://formspree.io/sheila.stanaland@gmail.com">
+            <div class="messages"></div>
+            <div class="controls">
+              <div class="row">
+                <div class="col-md-6 vspacer">
+                  <input type="text" name="name" placeholder="Firstname *" required="required" class="form-control">
+                </div>
+                <div class="col-md-6 vspacer">
+                  <input type="text" name="surname" placeholder="Lastname *" required="required" class="form-control">
+                </div>
+                <div class="col-md-6 vspacer">
+                  <input type="text" name="_replyto" placeholder="Email *" required="required" class="form-control">
+                </div>
+                <div class="col-md-6 vspacer">
+                  <input type="text" name="phone" placeholder="Phone" class="form-control">
+                </div>
+                <div class="col-md-12 vspacer">
+                  <textarea name="message" placeholder="Message *" rows="4" required="required" class="form-control"></textarea>
+                </div>
+                <input type="hidden" name="_next" value="/.ThankYou.html">
+                <div class="col-md-12 text-center vspacer">
+                  <button type="submit" class="btn btn-work">Send</button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>        
+      </div>  
+    </section>  
+
+    <section id="footer">  
+      <div class="jumbotron contrast">
+        <div class="row">
+          <div class="col-lg-2"></div>
+          <div class="col-lg-3">
+            <a href="https://www.linkedin.com/in/sheilastanalandward/" target="_blank" class="btn btn-li mr-4"><i class="fab fa-linkedin icons"></i></a>
+            <a href="https://github.com/sheilasward" target="_blank" class="btn btn-gh"><i class="fab fa-github"></i></a>
+          </div>
+          <div class="col-lg-2"></div>
+          <div class="col-lg-3">
+            <p>© 2019 Sheila Ward. All rights reserved.</p>
+          </div>
+          <div class="col-lg-2"></div>
+        </div>
       </div>
-    </section>
+    </section>  
 
   
+
   
-  
 
 
 
-    <script>
-            function openEmail() {
-                document.getElementById("email-form").style.visibility = "visible";
-            }
-            
-            function closeEmail() {
-                document.getElementById("email-form").style.visibility = "hidden";
-            }
-    </script>
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="./assets/js/portfolio.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
   </body>
 </html>
