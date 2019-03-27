@@ -1,5 +1,11 @@
+// When site is first loaded, go to top of site
+$('html, body').animate({
+    scrollTop: $("#cover").offset().top
+  }, 800, function(){
+    window.location.hash = $("#cover");
+  });
 
-
+ // In 'My Work' section, allow button clicks to show active state, and also filter categories 
 $(".btn-work").on("click", function() {
     var current = $(".onActive");
     console.log("current: " + current.text());
@@ -23,7 +29,8 @@ $(".btn-work").on("click", function() {
     });
 });
 
-$("#mainNavbar a").on("click", function() {
+// On the Navbar, allow button clicks to show active state and scroll to active section
+$("#mainNavbar a").on("click", function(e) {
     var curLink = $(".active");
     console.log("curLink = " + curLink.text());
     console.log("this = " + $(this).text());
