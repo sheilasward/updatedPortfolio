@@ -62,14 +62,6 @@ html, body {
     font-size: 26px;
 }
 
-.spaced-1 {
-    
-}
-
-.spaced-2 {
-    
-}
-
 .lead {
     margin: 0 40px;
 }
@@ -91,6 +83,7 @@ html, body {
 
 .btm-border {
     border-bottom: 1px solid white; 
+    margin: 20px 0;
 }
 
 .new-fontsz {
@@ -146,12 +139,12 @@ html, body {
 .img-border {
     box-sizing: border-box;
     border: 2px solid gray;
-    width: 330px;
+    width: 320px;
 }
 
 .card-border {
     box-sizing: border-box;
-    width: 330px;
+    width: 320px;
 }
 
 .card-img-top {
@@ -289,6 +282,14 @@ h1 {
 
 .button-group {
     text-align: center;
+}
+
+.btn-send {
+    background-color: rgba(0,0,0,0);
+    border: 2px solid #4AAAA6;
+    color: #4AAAA6;
+    margin: 10px 20px;
+    width: 103px;   
 }
 
 .btn-work {
