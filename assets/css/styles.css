@@ -306,9 +306,9 @@ h1 {
     width: 103px;
 }
 
-/*
 
-.active {
+
+.onActive {
     background-color: #4AAAA6;
     color: white;
     margin: 10px 20px;
@@ -316,7 +316,9 @@ h1 {
     outline: none;
 }
 
-*/
+#portfolio {
+    min-height: 100%;
+}
 
 .app-link {
     color: #4AAAA6;

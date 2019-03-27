@@ -1,10 +1,10 @@
 
 
 $(".btn-work").on("click", function() {
-    var current = $(".active");
-    console.log("current: " + current);
-    current.removeClass("active");
-    $(this).addClass("active");
+    var current = $(".onActive");
+    console.log("current: " + current.text());
+    current.removeClass("onActive");
+    $(this).addClass("onActive");
     var categoryToFilter = $(this).attr("data-filter");
     console.log("category to filter: " + categoryToFilter);
     $(".reference-item").each(function() {
@@ -14,8 +14,8 @@ $(".btn-work").on("click", function() {
             var categories = $(this).data("category").split(" ");
             $(this).hide();
             for (var i=0; i<categories.length; i++) {
-                console.log("category: " + categories[i]);
                 if (categories[i] === categoryToFilter) {
+                    console.log("category: " + categories[i]);
                     $(this).show();
                 }
             }
@@ -23,8 +23,10 @@ $(".btn-work").on("click", function() {
     });
 });
 
-$(".nav-link").on("click", function() {
+$("#mainNavbar a").on("click", function() {
     var curLink = $(".active");
+    console.log("curLink = " + curLink.text());
+    console.log("this = " + $(this).text());
     curLink.removeClass("active");
     $(this).addClass("active");
 });
