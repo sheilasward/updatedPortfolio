@@ -5,6 +5,11 @@ html, body {
     scroll-behavior: smooth;
 }
 
+section {
+    display: block;
+    overflow: auto; 
+}
+
 #mainNavbar {
     background-color: #4AAAA6;
 }
@@ -34,27 +39,6 @@ html, body {
 #thank-you {
     min-height: 100%
 }
-
-
-
-
-/*
-.navbar {
-    margin: 0;
-    padding: 20px 60px;
-    background-color: #4AAAA6;
-    color: white;
-    height: 60px;
-}
-
-/*
-
-
-
-
-
-
-*/
 
 .intro {
     padding-top: 260px;
@@ -102,10 +86,10 @@ html, body {
 }
 
 .jumbotron {
-    bottom: 0;
-    margin-top: 70px;
+    margin-bottom: 0;
+    margin-top: 65px;
     padding-top: 70px;
-    height: 250px;
+    height: 200px;
 }
 
 .btn-contrast {
@@ -159,11 +143,9 @@ html, body {
 }
 
 .reference-item {
-
     margin: 20px;
     padding: 0;
 }
-
 
 .reference a {
     width: 100%;
@@ -207,7 +189,6 @@ html, body {
     transform: translateY(100%);
     padding: 0 20px;
 }
-  
 
 .reference .overlay p {
     color: #fff;
@@ -217,25 +198,16 @@ html, body {
     text-transform: uppercase;
     letter-spacing: 0.1em;
 }
-/*
-.reference:hover img {
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
-}
-*/
+
 .reference:hover .overlay {
     opacity: 1;
     -webkit-transform: none;
     transform: none;
 }
-  
-
-
 
 h4 {
     font-size: 20px;
 }
-
 
 h5 {
     text-align: center;
@@ -265,10 +237,6 @@ h6 {
     height: 100%;
     text-align: center;
     margin: 0 auto;
-}
-
-#carousel, #skills, #about #portfolio{
-    height: auto;
 }
 
 #carousel-background {
@@ -309,8 +277,6 @@ h1 {
     margin: 10px 20px;
     width: 103px;
 }
-
-
 
 .onActive {
     background-color: #4AAAA6;
@@ -366,17 +332,9 @@ h1 {
     z-index: 10;
 }
 
-/*
-#ed-icon {
-    height: 200px;
-	padding: 10px;
-}
-*/
-
 .fixed-width {
     width: 250px;
 }
-
 
 #welcome {
     padding-top: 50px;
@@ -411,7 +369,6 @@ h1 {
     background-size: cover;
     background-repeat: repeat;
     height: auto;
-
 }
 
 #portfolio {
